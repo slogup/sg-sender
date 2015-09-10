@@ -1,0 +1,23 @@
+{
+  "name": "sg-sender",
+  "version": "0.0.1",
+  "description": "sg-sender for node.js",
+  "keywords": [],
+  "author": "hwaranglee <dev@slogup.com>",
+  "repository": { "type": "git", "url": "git://github.com/slogup/sg-sender.git" },
+  "dependencies": {
+    "email-templates": "*",
+    "nodemailer": "*",
+    "nodemailer-smtp-transport": "*",
+    "node-gcm": "*",
+    "apn": "1.6.2",
+    "request": "2.53.0",
+    "twilio": "1.11.1",
+    "async": "*"
+    },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "index"
+}

@@ -1,23 +1,156 @@
 {
-  "name": "sg-sender",
-  "version": "0.0.3",
-  "description": "sg-sender for node.js",
-  "keywords": [],
-  "author": "hwaranglee <ceo@slogup.com>",
-  "repository": { "type": "git", "url": "git://github.com/teamslogup/sg-sender.git" },
+  "_args": [
+    [
+      {
+        "name": "sg-sender",
+        "raw": "sg-sender@*",
+        "rawSpec": "*",
+        "scope": null,
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/leehwarang/Documents/sgdevelopments/sg-core-new"
+    ],
+    [
+      "sg-sender@*",
+      "/Users/leehwarang/Documents/sgdevelopments/sg-core-new"
+    ],
+    [
+      {
+        "raw": "sg-sender@*",
+        "scope": null,
+        "escapedName": "sg-sender",
+        "name": "sg-sender",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/leehwarang/Documents/sgdevelopments/pongift"
+    ],
+    [
+      {
+        "raw": "sg-sender@*",
+        "scope": null,
+        "escapedName": "sg-sender",
+        "name": "sg-sender",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "/Users/KJY/Documents/sgdevelopments/analytics-new"
+    ],
+    [
+      {
+        "raw": "sg-sender@0.1.0",
+        "scope": null,
+        "escapedName": "sg-sender",
+        "name": "sg-sender",
+        "rawSpec": "0.1.0",
+        "spec": "0.1.0",
+        "type": "version"
+      },
+      "/Users/this/SlogupDev/sgdevelopments/dowado"
+    ]
+  ],
+  "_from": "sg-sender@0.1.0",
+  "_id": "sg-sender@0.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/sg-sender",
+  "_nodeVersion": "6.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/sg-sender-0.1.0.tgz_1481527444574_0.034870081348344684"
+  },
+  "_npmUser": {
+    "name": "ac12bd",
+    "email": "ac12bd@slogup.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {
+    "bl": "0.9.5",
+    "boom": "2.10.1",
+    "cryptiles": "2.0.5",
+    "ctype": "0.5.3",
+    "hoek": "2.16.3",
+    "isstream": "0.1.2",
+    "json-stringify-safe": "5.0.1",
+    "node-uuid": "1.4.7",
+    "sntp": "1.0.9",
+    "stringstream": "0.0.5",
+    "tough-cookie": "2.3.2",
+    "tunnel-agent": "0.4.3"
+  },
+  "_requested": {
+    "raw": "sg-sender@0.1.0",
+    "scope": null,
+    "escapedName": "sg-sender",
+    "name": "sg-sender",
+    "rawSpec": "0.1.0",
+    "spec": "0.1.0",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sg-sender/-/sg-sender-0.1.0.tgz",
+  "_shasum": "0393683ead02b29e45d8cc430ad9b3519175d2d0",
+  "_shrinkwrap": null,
+  "_spec": "sg-sender@0.1.0",
+  "_where": "/Users/this/SlogupDev/sgdevelopments/dowado",
+  "author": {
+    "name": "hwaranglee",
+    "email": "ceo@slogup.com"
+  },
+  "bugs": {
+    "url": "https://github.com/teamslogup/sg-sender/issues"
+  },
   "dependencies": {
+    "apn": "1.6.2",
+    "async": "*",
     "email-templates": "*",
+    "node-gcm": "*",
     "nodemailer": "*",
     "nodemailer-smtp-transport": "*",
-    "node-gcm": "*",
-    "apn": "1.6.2",
     "request": "2.53.0",
-    "twilio": "1.11.1",
-    "async": "*"
-    },
+    "twilio": "1.11.1"
+  },
+  "description": "sg-sender for node.js",
   "devDependencies": {
     "mocha": "*",
     "should": "*"
   },
-  "main": "index"
+  "directories": {},
+  "dist": {
+    "shasum": "0393683ead02b29e45d8cc430ad9b3519175d2d0",
+    "tarball": "https://registry.npmjs.org/sg-sender/-/sg-sender-0.1.0.tgz"
+  },
+  "gitHead": "889529307c6cc93ecf6610ff483fc21510bc17e2",
+  "homepage": "https://github.com/teamslogup/sg-sender#readme",
+  "keywords": [],
+  "main": "index",
+  "maintainers": [
+    {
+      "name": "ac12bd",
+      "email": "ac12bd@slogup.com"
+    },
+    {
+      "name": "dusrn",
+      "email": "dusrn@slogup.com"
+    },
+    {
+      "name": "hwaranglee",
+      "email": "ceo@slogup.com"
+    }
+  ],
+  "name": "sg-sender",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/teamslogup/sg-sender.git"
+  },
+  "scripts": {},
+  "version": "0.1.1"
 }

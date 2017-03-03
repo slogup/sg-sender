@@ -142,7 +142,12 @@
     {
       "name": "hwaranglee",
       "email": "ceo@slogup.com"
+    },
+    {
+      "name": "hyeonsj413",
+      "email": "hyeonsj413@slogup.com"
     }
+
   ],
   "name": "sg-sender",
   "optionalDependencies": {},
@@ -152,5 +157,5 @@
     "url": "git://github.com/teamslogup/sg-sender.git"
   },
   "scripts": {},
-  "version": "0.1.2"
+  "version": "0.1.11"
 }

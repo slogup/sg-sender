@@ -4,21 +4,21 @@ var async = require('async');
 function getSender(config) {
     var apn = null;
     if (config.apn && config.apn.pass) {
-        apn = lib.apn(config.apn);    
+        apn = lib.apn(config.apn);
     }
     var gcm = null;
     if (config.gcm) {
-        gcm = lib.gcm(config.gcm);    
+        gcm = lib.gcm(config.gcm);
     }
     var email = null;
     if (config.email) {
-        email = lib.email(config.email);    
+        email = lib.email(config.email);
     }
     var sms = null;
-    sms = lib.sms(config.twillio, config.apiStoreSMS);
+    sms = lib.sms(config.twillio, config.apiStoreSMS, config.infoBankSMS);
 
     var mms = null;
-    mms = lib.mms(config.apiStoreSMS);
+    mms = lib.mms(config.apiStoreSMS, config.infoBankSMS);
 
     var fcm = null;
     fcm = lib.fcm(config.fcm);
@@ -48,7 +48,7 @@ module.exports.connect = function (config) {
         req.phoneErrorRefiner = phoneErrorRefiner;
         req.emailErrorRefiner = emailErrorRefiner;
         req.sendNoti = sender;
-        req.sendNotiAll = function (target, to, title, msg, data, callback) {
+        req.sendNotiAll = function (target, to, title, msg, data, platform, callback) {
 
             var notifications = [];
             var targets = target.split(" ");
@@ -74,7 +74,7 @@ module.exports.connect = function (config) {
                     });
                 } else if (targets[k] == "sms") {
                     notifications.push(function (n) {
-                        sender.sms(to, title, msg, data, makeCallback(n));
+                        sender.sms(null, to, title, msg, makeCallback(n));
                     });
                 } else if (targets[k] == "email") {
                     notifications.push(function (n) {
@@ -82,7 +82,7 @@ module.exports.connect = function (config) {
                     });
                 } else if (targets[k] == "fcm") {
                     notifications.push(function (n) {
-                        sender.fcm(to, title, msg, data, makeCallback(n));
+                        sender.fcm(to, title, msg, data, platform, makeCallback(n));
                     });
                 }
             }

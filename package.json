@@ -146,6 +146,10 @@
     {
       "name": "hyeonsj413",
       "email": "hyeonsj413@slogup.com"
+    },
+    {
+      "name": "nimrh1k",
+      "email": "nimrh1k@gmail.com"
     }
 
   ],
@@ -157,5 +161,5 @@
     "url": "git://github.com/teamslogup/sg-sender.git"
   },
   "scripts": {},
-  "version": "0.1.18"
+  "version": "0.1.19"
 }
